@@ -21,7 +21,7 @@ class ProjectsController < ApplicationController
         
 private
     def project_params
-        params.permit(:image)
+        params.permit(:name, :description, :website, :image, :industry, :valuation, :funding_goal)
     end
 
 end
