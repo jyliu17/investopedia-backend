@@ -5,8 +5,9 @@ class CreateProjects < ActiveRecord::Migration[6.0]
       t.text :description
       t.string :website
       t.string :image
-      t.string :field
-      t.integer :cost
+      t.string :industry
+      t.string :valuation
+      t.string :funding_goal
 
       t.timestamps
     end
