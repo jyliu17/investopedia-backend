@@ -18,7 +18,8 @@ class CommentsController < ApplicationController
       @comment = Comment.find(params[:id])
       @comment.destroy
       render json: @comment
-  end
+      end
+      
 private
 
      def comments_params
