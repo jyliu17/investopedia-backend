@@ -8,6 +8,7 @@ class CreateProjects < ActiveRecord::Migration[6.0]
       t.string :industry
       t.string :valuation
       t.string :funding_goal
+      t.integer :num
 
       t.timestamps
     end

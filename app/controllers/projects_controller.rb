@@ -18,7 +18,7 @@ class ProjectsController < ApplicationController
 
     def update 
         @project = Project.find(params[:id])
-        @project.update(projects_params)
+        @project.update(project_params)
         render json: @project
     end 
 
@@ -31,7 +31,7 @@ class ProjectsController < ApplicationController
         
 private
     def project_params
-        params.permit(:name, :description, :website, :image, :industry, :valuation, :funding_goal)
+        params.permit(:name, :description, :website, :image, :industry, :valuation, :funding_goal, :num)
     end
 
 end

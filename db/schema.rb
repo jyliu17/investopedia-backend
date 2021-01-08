@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 2021_01_04_212902) do
     t.string "industry"
     t.string "valuation"
     t.string "funding_goal"
+    t.integer "num"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
